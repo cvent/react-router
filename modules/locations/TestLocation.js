@@ -13,7 +13,7 @@ class TestLocation {
     this._updateHistoryLength();
   }
 
-  get needsDOM() {
+  needsDOM() {
     return false;
   }
 

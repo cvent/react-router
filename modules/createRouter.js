@@ -146,7 +146,7 @@ function createRouter(options) {
     );
   } else {
     invariant(
-      canUseDOM || location.needsDOM === false,
+      canUseDOM || location.needsDOM() === false,
       'You cannot use %s without a DOM',
       location
     );
